@@ -426,14 +426,28 @@ select {
   padding: 2rem 5rem 2rem 20rem;
 }
 
+.primary-navigation-line {
+  position: absolute;
+  width: 42%;
+  left: 12rem;
+  z-index: 1;
+  height: 1px;
+  background-color: hsl(var(--clr-white) / 0.2);
+}
+
 /* at tablet and mobile */
 @media (max-width: 63.9375em) {
   .primary-navigation {
     padding: 2rem 2rem 2rem 2rem;
     background: none;
   }
+
   .logo {
     margin-left: 2rem;
+  }
+
+  .primary-navigation-line {
+    display: none;
   }
 }
 
