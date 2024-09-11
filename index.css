@@ -564,3 +564,36 @@ select {
 .dots-menu button:focus {
   background-color: hsl(var(--clr-white));
 }
+
+.number-btn {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  color: hsl(var(--clr-white));
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid hsl(var(--clr-accent) / 0.25);
+  background-color: hsl(var(--clr-dark));
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.number-btn:hover {
+  border-color: hsl(var(--clr-accent) / 0.5);
+}
+
+.number-btn:focus {
+  background-color: hsl(var(--clr-white));
+  color: hsl(var(--clr-dark));
+}
+
+.number-btn.active {
+  background-color: hsl(var(--clr-white));
+  color: hsl(var(--clr-dark));
+}
+
+.number-btn.hovered {
+  border-color: hsl(var(--clr-accent) / 0.5);
+}
