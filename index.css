@@ -143,6 +143,10 @@ select {
   justify-content: end;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .grid {
   display: grid;
   gap: var(--gap, 1rem);
@@ -272,6 +276,10 @@ select {
 
 .text-accent {
   color: hsl(var(--clr-accent));
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* ----------------- */
@@ -596,4 +604,75 @@ select {
 
 .number-btn.hovered {
   border-color: hsl(var(--clr-accent) / 0.5);
+}
+
+.hero-section {
+  height: 100%;
+}
+
+/* hero section at desktop */
+@media (min-width: 1024px) {
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: max-content;
+    padding-top: 20rem;
+  }
+
+  .hero-section .lg-btn {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .hero-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  .hero-section-btn {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 2rem;
+  }
+
+  .hero-section .lg-btn {
+    font-size: var(--fs-500);
+  }
+}
+
+/* hero section at tablet and mobile */
+@media (max-width: 1023px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hero-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-section .lg-btn {
+    font-size: var(--fs-500);
+    margin-top: 2rem;
+  }
+}
+
+/* hero lg button at mobile */
+@media (max-width: 767px) {
+  .hero-section .lg-btn {
+    font-size: var(--fs-400);
+    margin-top: 1rem;
+  }
 }

@@ -6,20 +6,87 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
     <link
       rel="stylesheet"
       href="index.css"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body>
-    <div class="container flex flex-col">
-      <div class="box">
-        <a href="design-system.html">Design System</a>
+  <body
+    class="container flex flex-col"
+    style="
+      height: 100vh;
+      background-image: url(./assets/home/background-home-desktop.jpg);
+      background-size: cover;
+      background-position: center;
+    "
+  >
+    <header
+      class="flex items-center justify-between"
+      style="padding: 2em 0"
+    >
+      <a href="/"
+        ><img
+          src="assets/shared/logo.svg"
+          alt="Space Tourism Logo"
+      /></a>
+
+      <ul class="flex primary-navigation">
+        <li>
+          <a href="#">00 Home </a>
+        </li>
+        <li>
+          <a href="#"> 01 Destination </a>
+        </li>
+        <li>
+          <a href="#"> 02 Crew </a>
+        </li>
+        <li>
+          <a href="#"> 03 Technology </a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-section-content">
+        <h1 class="fs-500 ff-sans-cond text-accent uppercase">
+          So, you want to travel to
+        </h1>
+        <h1 class="fs-900 ff-serif uppercase">Space</h1>
+        <p class="fs-400 ff-sans-normal text-accent flex">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
       </div>
-      <div class="box">b</div>
-      <div class="box">c</div>
-      <div class="box">d</div>
-    </div>
+
+      <div class="flex hero-section-btn">
+        <a
+          class="lg-btn ff-serif uppercase bg-white text-dark"
+          href="#"
+          >Explore
+        </a>
+      </div>
+    </section>
   </body>
 </html>
