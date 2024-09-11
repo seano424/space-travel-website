@@ -30,6 +30,11 @@
       rel="stylesheet"
     />
     <title>Frontend Mentor | Space tourism website</title>
+    <script
+      type="module"
+      src="index.js"
+      defer
+    ></script>
   </head>
   <body class="flex flex-col home-page">
     <header
@@ -69,29 +74,55 @@
         <button
           aria-expanded="false"
           aria-controls="primary-navigation"
-          class="mobile-nav-toggle-btn mobile-nav-toggle-btn-open"
+          class="mobile-nav-toggle-btn"
         >
-          <img
-            class="mobile-nav-toggle-icon-open"
-            src="assets/shared/icon-hamburger.svg"
-            alt="Mobile Navigation"
-          />
           <span class="sr-only"> Mobile Navigation Open</span>
         </button>
-
-        <button
-          aria-expanded="true"
-          aria-controls="primary-navigation"
-          class="mobile-nav-toggle-btn mobile-nav-toggle-btn-close"
-        >
-          <img
-            class="mobile-nav-toggle-icon-close"
-            src="assets/shared/icon-close.svg"
-            alt="Mobile Navigation"
-          />
-          <span class="sr-only"> Mobile Navigation Close </span>
-        </button>
       </div>
+
+      <nav
+        class="mobile-menu"
+        data-visible="false"
+      >
+        <ul class="flex flex-col gap-2 mobile-navigation">
+          <li>
+            <a
+              class="flex items-center gap-1"
+              href="#"
+            >
+              <span>00</span>
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center gap-1"
+              href="#"
+            >
+              <span>01</span>
+              Destination
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center gap-1"
+              href="#"
+            >
+              <span>02</span>
+              Crew
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center gap-1"
+              href="#"
+            >
+              <span>03</span>
+              Technology
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="hero-section container">
