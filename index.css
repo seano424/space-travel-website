@@ -712,3 +712,22 @@ select {
     display: flex;
   }
 }
+
+.home-page {
+  height: 100vh;
+  background-image: url(./assets/home/background-home-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 64em) {
+  .home-page {
+    background-image: url(./assets/home/background-home-desktop.jpg);
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .home-page {
+    background-image: url(./assets/home/background-home-tablet.jpg);
+  }
+}
