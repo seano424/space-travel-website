@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Design System</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="index.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex justify-end">
+        <h1
+          class="fs-400 uppercase ff-sans-cond tracking-2 text-accent"
+          style="margin: 2rem 0"
+        >
+          Style Guide
+        </h1>
+      </div>
+
+      <div
+        class="grid gap-7"
+        style="margin-bottom: 40rem"
+      >
+        <section
+          id="colors"
+          class="grid bg-dark flex flex-col gap-2"
+        >
+          <h2 class="numbered-title"><span>01</span> Colors</h2>
+
+          <div class="flex flex-col gap-1">
+            <h5 class="fs-300 uppercase text-accent">Blue</h5>
+            <div
+              style="border-bottom: 1px solid hsl(var(--clr-accent) / 0.2)"
+            ></div>
+            <div class="grid grid-cols-2">
+              <div
+                class="flex flex-col"
+                style="flex-grow: 1"
+              >
+                <div
+                  class="bg-dark text-white ff-serif"
+                  style="border: 1px solid hsl(var(--clr-accent) / 0.2)"
+                >
+                  <div style="padding: 1rem; padding-top: 3rem">
+                    <p style="opacity: 50%">#0B0D17</p>
+                    <p class="uppercase">Blue-900</p>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="text-accent grid grid-cols-3">
+                    <span style="opacity: 50%; grid-column: 1 / 2">RGB</span>
+                    <span style="grid-column: span 2">11, 13, 23</span>
+                  </div>
+                  <div class="text-accent grid grid-cols-3">
+                    <span style="opacity: 50%; grid-column: 1 / 2">HSL</span>
+                    <span style="grid-column: span 2">230°, 35%, 7%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col"
+                style="flex-grow: 1"
+              >
+                <div
+                  class="bg-accent text-dark"
+                  style="border: 1px solid hsl(var(--clr-accent))"
+                >
+                  <div style="padding: 1rem; padding-top: 3rem">
+                    <p style="opacity: 50%">#D0D6F9</p>
+                    <p class="uppercase ff-serif">Blue-100</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="text-accent grid grid-cols-3">
+                    <span style="opacity: 50%; grid-column: 1 / 2">RGB</span>
+                    <span style="grid-column: span 2">208, 214, 249</span>
+                  </div>
+                  <div class="text-accent grid grid-cols-3">
+                    <span style="opacity: 50%; grid-column: 1 / 2">HSL</span>
+                    <span style="grid-column: span 2">231°, 77%, 90%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <h5 class="fs-300 uppercase text-accent">White</h5>
+            <div
+              style="border-bottom: 1px solid hsl(var(--clr-accent) / 0.2)"
+            ></div>
+            <div class="grid grid-cols-2">
+              <div
+                class="flex flex-col"
+                style="flex-grow: 1"
+              >
+                <div
+                  class="bg-white text-dark ff-serif"
+                  style="border: 1px solid hsl(var(--clr-white))"
+                >
+                  <div style="padding: 1rem; padding-top: 3rem">
+                    <p style="opacity: 50%">#FFFFFF</p>
+                    <p class="uppercase">White</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="text-accent grid grid-cols-3">
+                    <span style="opacity: 50%; grid-column: 1 / 2">RGB</span>
+                    <span style="grid-column: span 2">255, 255, 255</span>
+                  </div>
+                  <div class="text-accent grid grid-cols-3">
+                    <span style="opacity: 50%; grid-column: 1 / 2">HSL</span>
+                    <span style="grid-column: span 2">0°, 0%, 100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="typography"
+          class="grid bg-dark flex flex-col gap-2"
+        >
+          <h2 class="numbered-title"><span>02</span> Typography</h2>
+
+          <div class="grid collapsing-grid gap-1">
+            <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-1">
+                <div class="fs-300 text-accent">
+                  <p>Text Preset 1 - Bellefair Regular</p>
+                  <p style="opacity: 50%">
+                    144px - 171.9% Line Height (Normal) - 0px Letter Spacing
+                  </p>
+                </div>
+                <div
+                  style="border-bottom: 1px solid hsl(var(--clr-accent) / 0.2)"
+                ></div>
+                <h5 class="ff-serif fs-900 uppercase">Earth</h5>
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div class="fs-300 text-accent">
+                  <p>Text Preset 2 - Bellefair Regular</p>
+                  <p style="opacity: 50%">
+                    100px - 114.6% Line Height (Normal) - 0px Letter Spacing
+                  </p>
+                </div>
+                <div
+                  style="border-bottom: 1px solid hsl(var(--clr-accent) / 0.2)"
+                ></div>
+                <h5 class="ff-serif fs-800 uppercase">Venus</h5>
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div class="fs-300 text-accent">
+                  <p>Text Preset 3 - Bellefair Regular</p>
+                  <p style="opacity: 50%">
+                    56px - 64.2% Line Height (Normal) - 0px Letter Spacing
+                  </p>
+                </div>
+                <div
+                  style="border-bottom: 1px solid hsl(var(--clr-accent) / 0.2)"
+                ></div>
+                <h5 class="ff-serif fs-700 uppercase">JUPITER & SATURN</h5>
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div class="fs-300 text-accent">
+                  <p>Text Preset 4 - Bellefair Regular</p>
+                  <p style="opacity: 50%">
+                    32px - 37.5% Line Height (Normal) - 0px Letter Spacing
+                  </p>
+                </div>
+                <div
+                  style="border-bottom: 1px solid hsl(var(--clr-accent) / 0.2)"
+                ></div>
+                <h5 class="ff-serif fs-600 uppercase">
+                  URANUS, NEPTUNE & PLUTO
+                </h5>
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div class="fs-300 text-accent">
+                  <p>Text Preset 5 - Bellefair Regular</p>
+                  <p style="opacity: 50%">
+                    28px - 33.3% Line Height (Normal) - 0px Letter Spacing
+                  </p>
+                </div>
+                <div
+                  style="border-bottom: 1px solid hsl(var(--clr-accent) / 0.2)"
+                ></div>
+                <h5 class="ff-serif fs-500 uppercase">
+                  HAUMEA, SEDNA, ERIS, & CERES
+                </h5>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-1">
+                <div class="fs-300 text-accent">
+                  <p>Text Preset 6 - Bellefair Regular</p>
+                  <p style="opacity: 50%">
+                    28px - 32.1% Line Height (Normal) - 0px Letter Spacing
+                  </p>
+                </div>
+                <div
+                  style="border-bottom: 1px solid hsl(var(--clr-accent) / 0.2)"
+                ></div>
+                <h5 class="ff-serif fs-400 uppercase">384,400 km</h5>
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div class="fs-300 text-accent">
+                  <p>Text Preset 7- Bellefair Regular</p>
+                  <p style="opacity: 50%">
+                    14px - 16.8% Line Height (Normal) - 2px Letter Spacing
+                  </p>
+                </div>
+                <div
+                  style="border-bottom: 1px solid hsl(var(--clr-accent) / 0.2)"
+                ></div>
+                <h5 class="ff-serif fs-300 uppercase">AVG. DISTANCE</h5>
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div class="fs-300 text-accent">
+                  <p>Text Preset 8 - Bellefair Regular</p>
+                  <p style="opacity: 50%">
+                    16px - 19.2% Line Height (Normal) - 2px Letter Spacing
+                  </p>
+                </div>
+                <div
+                  style="border-bottom: 1px solid hsl(var(--clr-accent) / 0.2)"
+                ></div>
+                <h5 class="ff-serif fs-200 uppercase">EUROPA</h5>
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div class="fs-300 text-accent">
+                  <p>Text Preset 9 - Bellefair Regular</p>
+                  <p style="opacity: 50%">
+                    18px - 180% Line Height - 0px Letter Spacing
+                  </p>
+                </div>
+                <div
+                  style="border-bottom: 1px solid hsl(var(--clr-accent) / 0.2)"
+                ></div>
+                <p class="fs-200">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In
+                  nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
+                  pretium, ligula sollicitudin laoreet viverra, tortor libero
+                  sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis.
+                  Ut justo. Suspendisse potenti.Lorem ipsum dolor sit amet,
+                  consectetuer adipiscing elit. Phasellus hendrerit.
+                  Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
+                  vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
+                  sollicitudin laoreet viverra, tortor libero sodales leo, eget
+                  blandit nunc tortor eu nibh. Nullam mollis. Ut justo.
+                  Suspendisse potenti.Lorem ipsum dolor sit amet, consectetuer
+                  adipiscing elit. Phasellus hendrerit. Pellentesque aliquet
+                  nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis
+                  vel, nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="flex flex-col gap-2"
+          id="interactive-elements"
+        >
+          <h2 class="numbered-title"><span>03</span> Interactive Elements</h2>
+
+          <div
+            class="flex"
+            style="margin: 2rem 0"
+          >
+            <a
+              href="#"
+              class="lg-btn fs-400 ff-serif uppercase bg-white text-dark"
+            >
+              Explore
+            </a>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <h5 class="fs-300 uppercase text-accent">
+              Desktop and Tablet Navigation
+            </h5>
+
+            <ul class="flex primary-navigation">
+              <li>
+                <a
+                  class=""
+                  href="#"
+                  >Idle
+                </a>
+              </li>
+              <li>
+                <a
+                  class="active"
+                  href="#"
+                  >Active
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hovered"
+                  href="#"
+                  >Hovered
+                </a>
+              </li>
+            </ul>
+
+            <h5
+              style="margin-top: 2rem"
+              class="fs-300 uppercase text-accent"
+            >
+              Mobile Navigation
+            </h5>
+
+            <ul class="flex flex-col gap-2 mobile-navigation">
+              <li>
+                <a
+                  class="nav-item-mobile"
+                  href="#"
+                  >Idle
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-item-mobile active"
+                  href="#"
+                  >Active
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-item-mobile hovered"
+                  href="#"
+                  >Hovered
+                </a>
+              </li>
+            </ul>
+
+            <h5 class="fs-300 uppercase text-accent">Tabs Menu</h5>
+
+            <ul class="flex tabs-menu">
+              <li>
+                <button>Idle</button>
+              </li>
+              <li>
+                <button class="active">Active</button>
+              </li>
+              <li>
+                <button class="hovered">Hovered</button>
+              </li>
+            </ul>
+
+            <h5 class="fs-300 uppercase text-accent">Dots</h5>
+
+            <div class="flex dots-menu">
+              <button aria-selected="false">
+                <span class="sr-only">Idle</span>
+              </button>
+              <button
+                class="active"
+                aria-selected="true"
+              >
+                <span class="sr-only">Active</span>
+              </button>
+              <button
+                class="hovered"
+                aria-selected="false"
+              >
+                <span class="sr-only">Hovered</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
