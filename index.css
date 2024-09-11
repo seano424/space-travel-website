@@ -611,7 +611,8 @@ select {
 }
 
 /* hero section at desktop */
-@media (min-width: 1024px) {
+/* change to em */
+@media (min-width: 64em) {
   .hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -645,7 +646,8 @@ select {
 }
 
 /* hero section at tablet and mobile */
-@media (max-width: 1023px) {
+/* change to em */
+@media (max-width: 63.9375em) {
   .hero-section {
     display: flex;
     flex-direction: column;
@@ -669,10 +671,44 @@ select {
   }
 }
 
-/* hero lg button at mobile */
-@media (max-width: 767px) {
+/* hero section at mobile */
+/* change to em */
+@media (max-width: 47.9375em) {
   .hero-section .lg-btn {
     font-size: var(--fs-400);
     margin-top: 1rem;
+  }
+}
+
+/* mobile navigation toggle */
+.mobile-nav-toggle {
+  display: none;
+}
+
+.mobile-nav-toggle-btn-open {
+  display: block;
+}
+
+.mobile-nav-toggle-btn-close {
+  display: none;
+}
+
+.mobile-nav-toggle-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+/* navigation at mobile */
+/* change to em */
+@media (max-width: 47.9375em) {
+  .primary-navigation {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
   }
 }
