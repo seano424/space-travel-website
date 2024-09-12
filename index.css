@@ -672,7 +672,7 @@ select {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: max-content;
-    padding-top: 20rem;
+    padding-top: 15rem;
   }
 
   .hero-section .lg-btn {
